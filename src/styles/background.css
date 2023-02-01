@@ -1,0 +1,6 @@
+body {
+    background: url("../images/cool-background\ \(1\).png");
+    filter:blur("100px");
+    margin: 0;
+    padding: 0;
+}
