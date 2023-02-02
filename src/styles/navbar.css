@@ -1,0 +1,40 @@
+.navlist {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex: 14 14 0;
+    gap: 10%;
+}
+
+.logo-img {
+    display:flex;
+    flex: 1 1 0;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.cta-btn{
+    display: flex;
+    flex: 1 1 0;
+    justify-content: space-evenly;
+    text-decoration:none;
+    color: white;
+    border: 1px solid orange;
+    padding: 4px 2px;
+    background-color: black;
+    border-radius: 14px;
+    transition: all 2s;
+}
+
+.cta-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 4rem;
+}

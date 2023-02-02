@@ -1,0 +1,13 @@
+.layoutParent {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+footer {
+    position:fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 3rem;
+    border: 1px solid red;
+}
