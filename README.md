@@ -12,20 +12,26 @@ These instructions are up for change later as the application is developed but f
 
 - ### Client
 
-  - Make a `register` and `login` view
+  - Make a `register` and `login` view [done]
 
-  - Create at least 2 client side routes
+  - Create at least 2 client side routes [done]
 
-  - Create a view for authenticated users
+  - Create a view for authenticated users [done]
 
 - ### Server
 
-  - Implement full CRUD for 2 API routes
+  - Implement full CRUD for 2 API routes [done]
 
-  - Establish passwordless authentication
+  - Establish passwordless authentication [done]
 
-  - Choose the most effective method to make implement real-time for clean page
+  - Refactor the Express API into Sub-Routers [pending]
 
-  - Make a model for `Users` and `Tasks`
+  - Refactor the Express API route handlers into controllers [pending]
 
-  - Establish a relationship between `Users` and `Tasks`
+  - Test all Models and API route handlers in unit tests [pending]
+
+  - Choose the most effective method to make implement real-time chat for clean page [pending]
+
+  - Make a model for `Users` and `Tasks` [pending]
+
+  - Establish a relationship between `Users` and `Tasks` [pending]

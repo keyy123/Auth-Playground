@@ -1,9 +1,10 @@
-import { logout } from "../../services/API";
-
+import { logout } from "../services/API";
+import { useNavigate } from "react-router";
 const Navbar = ({user, setUser}) => {
+    const navigate = useNavigate();
     function LogoutApp(){
         setUser(logout())
-        console.log(user)
+        navigate("/login");
     }
     return (
         <nav className="navbar">
@@ -16,7 +17,7 @@ const Navbar = ({user, setUser}) => {
                 <li className="navlink">Link 3</li> 
             </ul>
             {
-                user.account === null ?
+                user.account === undefined || null  ?
                      ( 
                         <a href="/login" className="cta-btn">Login</a>
                     ) : (
