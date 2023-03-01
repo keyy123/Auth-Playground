@@ -209,7 +209,7 @@ app.post("/auth/magicLink", async (req, res) => {
         if (err) {
           res.status(404).send();
         } else {
-          res.status(200).send(`Magic Link Sent to ${magicLink}`);
+          res.status(200).json({ magicLink, status: "validating user email" });
         }
       });
     } else {
@@ -241,7 +241,13 @@ app.post("/auth/magicLink", async (req, res) => {
         if (err) {
           res.status(404).send();
         } else {
-          res.status(200).send(`Magic Link Sent to ${magicLink}`);
+          res
+            .status(200)
+            .json({
+              magicLink,
+              status: "Validating User Email",
+              msg: "Check your email for a link from Wizknee. It may be in spam so be aware",
+            });
         }
       });
     }

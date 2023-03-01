@@ -1,0 +1,32 @@
+.form-container{
+    margin: 0 auto;
+    width: 50%;
+}
+
+form {
+ display: grid;
+ border: 1px solid red;
+ grid-template-columns: 1fr 1fr;
+ gap: 10px;
+ margin-top: 20px;
+ align-items: center;
+}
+
+form > label {
+    display: block;
+}
+
+form p {
+    margin: 0;
+}
+
+button {
+    padding: 1em;
+    width: 100%;
+}
+
+input {
+    width: 93%;
+    padding: 1em;
+}
+

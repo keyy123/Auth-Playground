@@ -111,15 +111,17 @@ const MagicLinkAuthAPICall = async (user) => {
   return await postRequest(_, "/auth/magicLink", user);
 };
 
-const MagicLinkAuthClientSide = async (user) => {
+const MagicLinkAuthClientSide = async (e) => {
+  e.preventDefault();
   // send an email to the user and validate if the email actually exists
   // return the user to the home page with name and account ig
   let user = {
-    email: document.getElementById("").value,
-    name: document.getElementById("").value,
+    email: document.getElementById("#").value,
+    name: document.getElementById("#").value,
   };
 
   const res = await MagicLinkAuthAPICall(user);
+  return postLogin(res, user);
 };
 
 export {

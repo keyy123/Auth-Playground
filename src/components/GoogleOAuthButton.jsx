@@ -35,6 +35,11 @@ return (
         onError={() => {
             console.log('Login Failed');
         }}
+        type="standard"
+        theme="outline"
+        shape="rectangular"
+        width="1200px"
+        size="large"
     />
     );
 }
