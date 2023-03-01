@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router";
-import { registerClientSide as Register } from "../../../services/API";
+import { registerClientSide as Register } from "../../services/API";
 
 const Signup = () => {
     const navigate = useNavigate();
     return (
         <form id="formRegister" onSubmit={(e) => {
-            Register(e) //return user's name + email
+            Register(e) 
             navigate("/login");
             }}>
             <fieldset>
@@ -19,6 +19,7 @@ const Signup = () => {
                 <input type="password" id="register_password" required autoComplete="new-password" />
             </fieldset>
             <button>Submit</button>
+            <a href="/login">Login</a>
         </form>
     )
 }

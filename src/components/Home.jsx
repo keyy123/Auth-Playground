@@ -1,7 +1,6 @@
 import Layout from "./Layout";
 
 const Home = ({user, setUser}) => {
-  console.log(navigator.PasswordCredential)
   return (
     <div>
         <Layout user={user} setUser={setUser}>
