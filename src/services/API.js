@@ -1,4 +1,4 @@
-import { postRequest } from "./util";
+import { getRequest, postRequest } from "./util";
 let _ = undefined;
 const loginAPICall = async (user) => {
   try {
@@ -107,22 +107,46 @@ const GoogleAuthClientSide = async (data) => {
   });
 };
 
-const MagicLinkAuthAPICall = async (user) => {
+const sendMagicLinkAPICall = async (user) => {
   return await postRequest(_, "/auth/magicLink", user);
 };
 
-const MagicLinkAuthClientSide = async (e) => {
+const sendMagicLinkClientSide = async (e) => {
+  // prevent default behavior
   e.preventDefault();
-  // send an email to the user and validate if the email actually exists
-  // return the user to the home page with name and account ig
+
+  // check if the toggle is on
   let user = {
-    email: document.getElementById("#").value,
-    name: document.getElementById("#").value,
+    email: document.getElementById("magic_email").value,
+    name: document.getElementById("magic_name").value,
   };
 
-  const res = await MagicLinkAuthAPICall(user);
+  // something is wrong with API call
+  const res = await sendMagicLinkAPICall(user);
+  return await res;
+  // console.log(res, postLogin(res, user));
+  // return postLogin(res, user);
+};
+
+const extractMagicToken = async (e) => {
+  e.preventDefault();
+  const jwtString = new URLSearchParams(location.search);
+  const res = await getRequest(_, `/account?${jwtString}`);
+
+  if (!res.ok) {
+    return false;
+  }
+
+  let user = {
+    email: res.decoded.email,
+    name: res.decoded.name,
+  };
+  console.log(postLogin(res, user));
   return postLogin(res, user);
 };
+
+// send an email to the user and validate if the email actually exists
+// return the user to the home page with name and account ig
 
 export {
   loginClientSide,
@@ -131,4 +155,6 @@ export {
   logout,
   autoLogin,
   GoogleAuthClientSide,
+  sendMagicLinkClientSide,
+  extractMagicToken,
 };

@@ -9,8 +9,8 @@ async function postRequest(url = "http://localhost:3000", path, body) {
   return await res.json();
 }
 
-async function getRequest(url) {
-  const res = await fetch(url, {
+async function getRequest(url = "http://localhost:3000", path) {
+  const res = await fetch(url + path, {
     // Read the MDN Documentation and wanted to try controlling cache
     headers: {
       "Content-Type": "application/json",

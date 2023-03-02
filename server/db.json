@@ -1,9 +1,27 @@
 {
   "users": [
     {
+      "email": "parktwins1@gmail.com",
+      "name": "Kheyyon",
+      "password": false,
+      "google": "625419452458-p45jdk99ugm7tvdb8p5v2j2rgiikdjq1.apps.googleusercontent.com"
+    },
+    {
       "name": "Kheyyon Parker",
       "email": "kheyyon.parker@gmail.com",
-      "password": "$2b$10$p62xtELA7zzhUGCAfp6Vh.qS6szGAIdYTt05.4vl9lhAAMxvd.j0q"
+      "password": "$2b$10$k6/UdJJFVpp/hcR4p1iZp.z4qwmS1/oJH/Ncvp5gNZnEhwlJ2Vheq"
+    },
+    {
+      "name": "Kheyyon Parker",
+      "email": "kheyyon.parker@gmail.com",
+      "password": "$2b$10$k6/UdJJFVpp/hcR4p1iZp.z4qwmS1/oJH/Ncvp5gNZnEhwlJ2Vheq",
+      "magicToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtoZXl5b24ucGFya2VyQGdtYWlsLmNvbSIsIm5hbWUiOiJLaGV5eW9uIFBhcmtlciIsImV4cGlyZVRpbWUiOiIyMDIzLTAzLTAyVDA4OjQ4OjAxLjM0OVoiLCJpYXQiOjE2Nzc3NDY1ODEsImV4cCI6MTY3Nzc0Njg4MX0.cvw2NNn3p9M2d5i23rhJaKTX29PcZU0mfo7wfiYWzWc"
+    },
+    {
+      "name": "Kheyyon Parker",
+      "email": "kheyyon.parker@gmail.com",
+      "password": "$2b$10$k6/UdJJFVpp/hcR4p1iZp.z4qwmS1/oJH/Ncvp5gNZnEhwlJ2Vheq",
+      "magicToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtoZXl5b24ucGFya2VyQGdtYWlsLmNvbSIsIm5hbWUiOiJLaGV5eW9uIFBhcmtlciIsImV4cGlyZVRpbWUiOiIyMDIzLTAzLTAyVDA5OjA2OjMwLjU3NVoiLCJpYXQiOjE2Nzc3NDc2OTAsImV4cCI6MTY3Nzc0Nzk5MH0.lDCvG9PAb-z2fI610TtvQ8xfKXfQF0MXddreOTEe2og"
     }
   ]
 }

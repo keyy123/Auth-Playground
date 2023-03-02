@@ -30,3 +30,6 @@ input {
     padding: 1em;
 }
 
+.magicBtn {
+    grid-column: span 2;
+}
