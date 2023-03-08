@@ -20,9 +20,15 @@ These instructions are up for change later as the application is developed but f
 
 - ### Server
 
-  - Implement full CRUD for 2 API routes [done]
+  - Establish passwordless authentication [pending]
 
-  - Establish passwordless authentication [done]
+  - Email authentication [done]
+
+  - SMS authentication - 1 time code [pending]
+
+  - Web authentication [pending]
+
+  - Authenticator authentication [pending]
 
   - Refactor the Express API into Sub-Routers [pending]
 
