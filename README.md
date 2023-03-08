@@ -27,11 +27,3 @@ These instructions are up for change later as the application is developed but f
   - Refactor the Express API into Sub-Routers [pending]
 
   - Refactor the Express API route handlers into controllers [pending]
-
-  - Test all Models and API route handlers in unit tests [pending]
-
-  - Choose the most effective method to make implement real-time chat for clean page [pending]
-
-  - Make a model for `Users` and `Tasks` [pending]
-
-  - Establish a relationship between `Users` and `Tasks` [pending]
