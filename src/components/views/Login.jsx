@@ -46,6 +46,7 @@ const LoginView = ({setUser, user}) => {
                     return user.isLoggedIn ? navigate("/") : null
                 }
             }>
+                {/* <fieldset> */}
                {!magicForm && !jwtString && message.length === 0 && <>
                     <p>
                 <label 
@@ -62,7 +63,7 @@ const LoginView = ({setUser, user}) => {
                     autoComplete="username" 
                     />
                 </p>
-                <p>
+                {/* <p>
                 <label 
                     htmlFor="login_password"
                     className="login_password_input"
@@ -74,17 +75,17 @@ const LoginView = ({setUser, user}) => {
                     id="login_password" 
                     autoComplete="current-password"
                     />
-                </p>
+                </p> */}
                 
                 
-                {/* <section hidden id="login_section_password">
+                <section hidden id="login_section_password">
                 <label htmlFor="login_password">Password</label>
                 <input type="password" id="login_password" autoComplete="current-password"/> 
                     </section>   
                     
                     <section hidden id="login_section_webauthn">
-                    <a href="#">Log in with your Authenticator</a>
-                </section>   */}
+                    <a href="/">Log in with your Authenticator</a>
+                </section>  
             {/* </fieldset> */}
             
             
